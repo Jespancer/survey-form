@@ -2,16 +2,16 @@
 <html>
 
 <head>
-    <title>Survey Form</title>
+    <title>Feedback</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">This is a survey.</p>
+    <h1 id="title">Submit your Feedback</h1>
+    <p id="description">Thank you for your time to submit valuable feedback to help me improve my website!</p>
     <form id="survey-form">
         <div class="row">
-            <label id="name-label">Name:</label>
+            <label class="type1" id="name-label">Name:</label>
             <input type="text" id="name" placeholder="Enter your name" required>
         </div>
         <div class="row">
@@ -19,27 +19,51 @@
             <input type="email" id="email" placeholder="Enter your Email" required>
         </div>
         <div class="row">
-            <label id="number-label">Number:</label>
-            <input type="number" id="number" placeholder="XX-XX-XXXX" pattern="" required>
-        </div>
-        <div class="row">
-            <label>adasd</label>
-            <select id="dropdown" required>
-                <option disabled selected>Choose</option>
-                <option value="">Option</option>
-            </select>
+            <label id="number-label">Rate my website:</label>
+            <input type="number" id="number" placeholder="1 - 10" min="1" max="10" required>
         </div>
         <div class="row">
             <label>sad</label>
-            <input type="radio" name="group" value="" checked>
+            <input type="radio" name="group" value="">
         </div>
         <div class="row">
-            <label>asdas</label>
-            <input type="">
+            <label>What is your favorite type of content?</label>
+            <select id="dropdown" required>
+                <option disabled selected value="">- Select one -</option>
+                <option value="blog">Blog</option>
+                <option value="podcast">Podcast</option>
+                <option value="projects">Projects</option>
+                <option value="dont-know">Don't know</option>
+                <option value="other">Other</option>
+            </select>
         </div>
         <div class="row">
-            <label>sada</label>
+            <label>What type of content do you want to see more of?</label>
+            <input type="checkbox" value="blog-posts">
+            <label>Blog posts</label>
+        </div>
+        <div class="row">
+            <label class="invisible">What type of content do you want to see more of?</label>
+            <input type="checkbox" value="podcasts">
+            <label>Podcasts</label>
+        </div>
+        <div class="row">
+            <label class="invisible">What type of content do you want to see more of?</label>
+            <input type="checkbox" value="projects">
+            <label>Projects</label>
+        </div>
+        <div class="row">
+            <label class="invisible">What type of content do you want to see more of?</label>
+            <input type="checkbox" value="other">
+            <label>Other</label>
+        </div>
+        <div class="row">
+            <label>Custom note:</label>
             <textarea></textarea>
+        </div>
+        <div class="row">
+            <input type="checkbox" name="email-list" value="yes">
+            <label>I want to join the email list.</label>
         </div>
         <button type="submit" id="submit">Submit</button>
     </form>

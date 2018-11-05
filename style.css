@@ -1,0 +1,35 @@
+:root {
+	background: gray;
+	color: blue;
+	font-family: Roboto, Sans-serif;
+}
+
+body {
+	text-align: center;
+}
+
+#survey-form {
+	
+}
+
+.row {
+	margin: 1rem;
+	display: flex;
+}
+.type1 {
+	text-align: right;
+	width: 50%;
+	margin-right: 0.5rem;
+}
+
+.reverse {
+
+}
+
+#title {
+	font-weight: normal;
+}
+
+.invisible {
+	opacity: 0;
+}
