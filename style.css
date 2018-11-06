@@ -1,35 +1,131 @@
 :root {
 	background: gray;
-	color: blue;
-	font-family: Roboto, Sans-serif;
+    --color: blue;
+    color: var(--color);
+    font-family: Roboto, Sans-serif;
+    font-size: 1.5rem;
 }
 
 body {
-	text-align: center;
+    margin: 0;
+    text-align: center;
 }
 
-#survey-form {
-	
-}
-
-.row {
-	margin: 1rem;
-	display: flex;
-}
-.type1 {
-	text-align: right;
-	width: 50%;
-	margin-right: 0.5rem;
-}
-
-.reverse {
-
+::placeholder {
+    color: var(--color);
+    font-family: Roboto, Sans-serif;
+    opacity: 0.5;
 }
 
 #title {
-	font-weight: normal;
+    font-weight: normal;
 }
 
-.invisible {
-	opacity: 0;
+#survey-form {
+    margin-bottom: 3rem;
+}
+
+.row {
+    margin: 0.5rem;
+    display: flex;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+}
+
+#name,
+#email,
+#submit,
+#number,
+#dropdown,
+#note {
+    background: #dedede;
+    color: var(--color);
+    font-family: Roboto, Sans-serif;
+    font-size: 1rem;
+    border-color: var(--color);
+    border-width: 0.05rem;
+}
+
+#number {
+	width: 3.25rem;
+}
+
+#note {
+    width: 20rem;
+    height: 5rem;
+}
+
+#email-list {
+	width: 49%;
+	display: flex;
+	align-content: right;
+	margin-right: 0.5%;
+}
+#email-list-label {
+	margin-left: 0.5%;
+}
+.label_1 {
+    text-align: right;
+    width: 49%;
+    margin-right: 0.5%;
+}
+
+.label_2 {
+    text-align: right;
+    width: 49%;
+    margin-right: 0.5%;
+    opacity: 0;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    color: var(--color);
+    background: #dedede;
+    position: fixed;
+    bottom: 0;
+}
+
+#twitterlink {
+    text-decoration: none;
+    text-align: right;
+    font-size: 1.25rem;
+    color: #00aced;
+    animation: blink 3s infinite;
+    position: absolute;
+    bottom: 0.125rem;
+    right: 0.125rem;
+    z-index: 10;
+}
+
+#twitterlink:hover {
+    animation: twitterhover;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0.50;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.50;
+    }
+}
+
+@keyframes twitterhover {
+    100% {
+        opacity: 1;
+    }
 }
