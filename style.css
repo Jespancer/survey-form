@@ -1,9 +1,9 @@
 :root {
-	background: gray;
-    --color: blue;
+	background: #680400;
+    --color: #ffc2bf;
     color: var(--color);
     font-family: Roboto, Sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 body {
@@ -14,20 +14,22 @@ body {
 ::placeholder {
     color: var(--color);
     font-family: Roboto, Sans-serif;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 #title {
     font-weight: normal;
 }
 
-#survey-form {
-    margin-bottom: 3rem;
-}
-
 .row {
     margin: 0.5rem;
     display: flex;
+}
+
+.label-left {
+    text-align: right;
+    width: 49%;
+    margin-right: 0.5%;
 }
 
 input[type="radio"],
@@ -42,7 +44,7 @@ input[type="checkbox"] {
 #number,
 #dropdown,
 #note {
-    background: #dedede;
+    background: #470200;
     color: var(--color);
     font-family: Roboto, Sans-serif;
     font-size: 1rem;
@@ -51,81 +53,17 @@ input[type="checkbox"] {
 }
 
 #number {
-	width: 3.25rem;
+	width: 3.6rem;
 }
 
 #note {
-    width: 20rem;
-    height: 5rem;
+    width: 15rem;
+    height: 6rem;
+    margin-left: 0.5%;
 }
 
-#email-list {
-	width: 49%;
-	display: flex;
-	align-content: right;
-	margin-right: 0.5%;
-}
-#email-list-label {
-	margin-left: 0.5%;
-}
-.label_1 {
-    text-align: right;
-    width: 49%;
-    margin-right: 0.5%;
-}
-
-.label_2 {
-    text-align: right;
-    width: 49%;
-    margin-right: 0.5%;
-    opacity: 0;
-}
-
-/* Footer */
-
-footer {
-    width: 100%;
-    height: 1.5rem;
-    line-height: 1.5rem;
-    font-size: 1rem;
-    color: var(--color);
-    background: #dedede;
-    position: fixed;
-    bottom: 0;
-}
-
-#twitterlink {
-    text-decoration: none;
-    text-align: right;
-    font-size: 1.25rem;
-    color: #00aced;
-    animation: blink 3s infinite;
-    position: absolute;
-    bottom: 0.125rem;
-    right: 0.125rem;
-    z-index: 10;
-}
-
-#twitterlink:hover {
-    animation: twitterhover;
-}
-
-@keyframes blink {
-    0% {
-        opacity: 0.50;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0.50;
-    }
-}
-
-@keyframes twitterhover {
-    100% {
-        opacity: 1;
-    }
+#submit {
+	padding: 0.25rem;
+	margin: 1rem;
+	margin-bottom: 1.5rem;
 }
